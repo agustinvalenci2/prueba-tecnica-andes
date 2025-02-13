@@ -62,12 +62,12 @@ pip install -r requirements.txt
 
 ### API Endpoints
 
-- **GET /**: Retrieve all tasks.
-- **POST /create**: Create a new task.
+- **GET api/tasks**: Retrieve all tasks.
+- **POST api/tasks**: Create a new task.
   - Request Body: `user`, `title`, `status`
-- **PUT /done/<int:task_id>**: Update the status of a task.
+- **PUT api/tasks/<int:task_id>**: Update the status of a task.
   - Request Body: `status`
-- **DELETE /delete/<int:task_id>**: Delete a task by its ID.
+- **DELETE api/tasks/<int:task_id>**: Delete a task by its ID.
 
 ## Testing
 

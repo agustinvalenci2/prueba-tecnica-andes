@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+</head>
+
+<body>
+    <main class="container p-4">
+        <h1 class="display-4 text-center title mt-4">Tasks App</h1>
+
+        <div id="auth-section">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div id="register-card" class="card"></div>
+                    <div id="login-card" class="card mt-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="task-section" style="display: none;">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div id="task-form-card" class="card"></div>
+                    <div class="card-body">
+                        <div id="success-message" class="alert alert-success" style="display: none;"></div>
+                        <ul id="task-list" class="list-group"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="{{url_for('static', filename='js/auth.js')}}"></script>
+    <script src="{{url_for('static', filename='js/tasks.js')}}"></script>
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+</body>
+
+</html>

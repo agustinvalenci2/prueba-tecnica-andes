@@ -1,0 +1,201 @@
+{
+    "info": {
+        "name": "Task API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Register User",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/register",
+                    "host": [
+                        "http://127.0.0.1:5000/api"
+                    ],
+                    "path": [
+                        "register"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"password123\",\n    \"admin\": false\n}"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Login User",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/login",
+                    "host": [
+                        "http://127.0.0.1:5000/api"
+                    ],
+                    "path": [
+                        "login"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"password123\"\n}"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Tasks",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer {{jwt_token}}"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/tasks",
+                    "host": [
+                        "http://127.0.0.1:5000/api"
+                    ],
+                    "path": [
+                        "tasks"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Task by ID",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer {{jwt_token}}"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/tasks/1",
+                    "host": [
+                        "http://127.0.0.1:5000/api"
+                    ],
+                    "path": [
+                        "tasks",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Create Task",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer {{jwt_token}}"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/tasks",
+                    "host": [
+                        "http://127.0.0.1:5000/api"
+                    ],
+                    "path": [
+                        "tasks"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"title\": \"New Task\",\n    \"description\": \"Task description\",\n    \"user_id\": 1\n}"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update Task",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer {{jwt_token}}"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/tasks/1",
+                    "host": [
+                        "http://127.0.0.1:5000/api"
+                    ],
+                    "path": [
+                        "tasks",
+                        "1"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"title\": \"Updated Task\",\n    \"description\": \"Updated description\"\n}"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Task",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer {{jwt_token}}"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/tasks/1",
+                    "host": [
+                        "http://127.0.0.1:5000/api"
+                    ],
+                    "path": [
+                        "tasks",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

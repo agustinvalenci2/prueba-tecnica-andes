@@ -30,8 +30,7 @@ Make sure you have Python 3.7 or higher installed on your machine.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/tasks-app.git
-cd tasks-app
+git https://github.com/agustinvalenci2/prueba-tecnica-andes.git
 ```
 
 ### Create a Virtual Environment
@@ -84,8 +83,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-Your Name
-[Your GitHub Profile](https://github.com/yourusername)
+Agustin Valencia
+[https://github.com/agustinvalenci2](https://github.com/agustinvalenci2)
 
 ## Acknowledgments
 
@@ -93,7 +92,7 @@ Your Name
 ```
 
 ### Customization Instructions
-- **Repository URL**: Replace `https://github.com/yourusername/tasks-app.git` with the actual URL of your GitHub repository.
+- **Repository URL**: Replace `https://github.com/agustinvalenci2/prueba-tecnica-andes.git` with the actual URL of your GitHub repository.
 - **Author**: Fill in your name and provide a link to your GitHub profile.
 - **Additional Features**: If you have other features or customizations, make sure to add those to the README.
 - **License**: If you haven't already, consider adding a `LICENSE` file to your repository.

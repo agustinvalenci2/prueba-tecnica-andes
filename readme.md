@@ -69,13 +69,9 @@ pip install -r requirements.txt
   - Request Body: `status`
 - **DELETE api/tasks/<int:task_id>**: Delete a task by its ID.
 
-## Testing
 
-You can run the tests to ensure everything is working correctly:
 
-```bash
-pytest tests.py
-```
+
 
 ## License
 
